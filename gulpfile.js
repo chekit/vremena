@@ -9,7 +9,7 @@ gulp.task('default', function () {
 });
 
 gulp.task('build', ['clean'], function () {
-	gulp.start('sass', 'jade');
+	gulp.start('fonts', 'sass', 'jade');
 });
 
 gulp.task('server', ['build'], function () {

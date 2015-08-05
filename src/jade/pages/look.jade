@@ -1,0 +1,49 @@
+extends ../_tmpl/_tmpl
+
+block append config
+	- var look = true
+	- var newAsideClass = asideClass.push('aside--look')
+
+block append main
+	#js-slider.slider
+		button.slider__btn.btn--prev Предыдущий
+		button.slider__btn.btn--next Следующий
+		img.slider__img(src="images/slider-bg.png", alt="Джинсы Pinko")
+		.slider__wrapper
+			ul.slider__list
+				li.list__item
+					img.item__img(src="images/things/pinko.png", alt="Джинсы Pinko")
+					p.item__name Джинсы Pinko
+					p.item__discount -70%
+				li.list__item
+					img.item__img(src="images/things/pinko.png", alt="Джинсы Pinko")
+					p.item__name Джинсы Pinko
+					p.item__discount -70%
+				li.list__item
+					img.item__img(src="images/things/pinko.png", alt="Джинсы Pinko")
+					p.item__name Джинсы Pinko
+					p.item__discount -70%
+				li.list__item
+					img.item__img(src="images/things/pinko.png", alt="Джинсы Pinko")
+					p.item__name Джинсы Pinko
+					p.item__discount -70%
+block append aside__event
+	.aside__block.block--event
+		h2.h2 Open Air Sale!
+		p 
+			| 20.08 – 22.08
+			br
+			| Ежедневно с 11.00 до 22.00
+		h3.h3 
+			| Изделия мировых брендов
+			br
+			| со скидками до 70%
+block append aside__address
+		.aside__block.block--address
+			p
+				strong
+					| Галереи &laquo;Времена года&raquo;
+					br
+					| Кутузовский проспект, 48
+					br
+					a(href="#", target="_blank") 5&nbsp;этаж, веранда Ресторана и&nbsp;Бара &laquo;Облака&raquo;

@@ -10,7 +10,8 @@ var gulp = require('gulp'),
 
 var path = {
 	jade: ['./src/jade/*.jade', './src/jade/pages/*.jade', '!./src/jade/_config.jade'],
-	sass: ['./src/sass/styles.scss'] 
+	sass: ['./src/sass/styles.scss'],
+	fonts: ['./src/sass/base/fonts/**/*']
 }
 
 var errorHandler = function (error) {
@@ -19,7 +20,16 @@ var errorHandler = function (error) {
 }
 
 gulp.task('clean', function (cb) {
-	del(['./dist', './src/index.html'], cb);
+	del(['./dist', './src/*.html'], cb);
+});
+
+gulp.task('fonts', function () {
+	return gulp.src(path.fonts)
+		.pipe(gulp.dest('./src/css/fonts/'))
+		.pipe($.notify({
+			title: 'Fonts',
+			message: 'Fonts Copied!'
+		}));		
 });
 
 gulp.task('sass', function () {

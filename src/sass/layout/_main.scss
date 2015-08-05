@@ -1,0 +1,15 @@
+.main {
+	@extend %clearfix;
+	margin-bottom: 40px;
+
+	.wrapper--full & {
+		margin-bottom: 0;
+	}
+}
+
+.block--sale {
+}
+
+.sale__img {
+    margin: -13px 0 0 -77px;
+}

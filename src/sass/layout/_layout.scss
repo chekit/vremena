@@ -1,0 +1,16 @@
+.wrapper {
+	margin: 0 auto;
+	padding: 0 30px;
+	width: 940px;
+}
+
+.content {
+	float: left;
+	width: $content-w;
+
+	.wrapper--full & {
+		float: none;
+		overflow: hidden;
+		width: 100%;
+	}
+}

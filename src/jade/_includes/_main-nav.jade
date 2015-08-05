@@ -1,15 +1,27 @@
 block main-nav
 	nav.main-nav
-		ul.main-nav__List
-			li.list__item.item--current
-				a.item__link(href="#") Об акции
-			li.list__item
-				a.item__link(href="#") Деним
+		ul.main-nav__list
+			if index 
+				li.list__item.item--current
+					a.item__link(href="/") Об акции
+			else 
+				li.list__item
+					a.item__link(href="/") Об акции
+			if look
+				li.list__item.item--current
+					a.item__link(href="look.html") Деним
+			else
+				li.list__item
+					a.item__link(href="look.html") Деним
 			li.list__item.item--disabled Романтический стиль
 				span.date 12.08 
 			li.list__item.item--disabled Спорт шик
 				span.date 17.08 
 			li.list__item.item--disabled Лучшие находки распродажи
 				span.date 19.08
-			li.list__item.item--specials
-				a.item__link(href="brands.html") Участники акции
+			if brands
+				li.list__item.item--specials.item--current
+					a.item__link(href="brands.html") Участники акции
+			else
+				li.list__item.item--specials
+					a.item__link(href="brands.html") Участники акции

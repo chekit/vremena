@@ -1,19 +1,31 @@
 extends _tmpl/_tmpl
 
+block append config
+	- var index = true
+
 block append main
-	p Main
+	.main__block.block--sale
+		img(src="images/sale-big-label.png", class="sale__img", alt="Open Air Sale на кутузовском")
 block append aside__event
 	.aside__block.block--event
 		h2.h2 Вечеринка в&nbsp;честь открытия
 		p 
-			| Четверг, 20&nbsp;августа 2015&nbsp;г.
+			| Четверг, 
+			strong 20&nbsp;августа
+			|  2015&nbsp;г.
 			br
 			| с&nbsp;19.00 до&nbsp;22.00
-		p
-			| Коктейль от&nbsp;Ресторана 
-			br
-			| и&nbsp;Бара &laquo;Облака&raquo;
-			br
-			| DJ-сет
-			br
-			| Fashion-анимации
+		ul
+			li 
+				| Коктейль от&nbsp;Ресторана 
+				br
+				| и&nbsp;Бара &laquo;Облака&raquo;
+			li DJ-сет
+			li Fashion-анимации
+block append aside__address
+		.aside__block.block--address
+			p
+				strong
+					| Кутузовский проспект, 48
+					br
+					a(href="#", target="_blank") 5&nbsp;этаж, веранда Ресторана и&nbsp;Бара &laquo;Облака&raquo;

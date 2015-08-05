@@ -2,9 +2,15 @@ extends ../_tmpl/_tmpl
 
 block append config
 	- var newWrapperClass = wrapperClass.push('wrapper--full')
+	- var brands = true
 
 block append main
-	p Hello
+	.brands
+		a.brands__link(href="#", target="_blank")
+			img.brands__img(src="images/brands.jpg", alt="Участники акции")
+	
 block aside
 
 block footer
+	footer.footer
+		p.footer__subs.subs--age 12+

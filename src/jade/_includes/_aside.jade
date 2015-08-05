@@ -1,5 +1,5 @@
 block aside
-	aside.aside
+	aside(class=asideClass)
 		.aside__block.block--place
 			.place__logo
 				a.logo__link(href="#", target="_blank")
@@ -8,8 +8,4 @@ block aside
 				p.info__addr Кутузовский проспект, 48 
 				p.info__phone +7 (495) 644 48 48
 		block aside__event
-		.aside__block.block--address
-			p
-				| Кутузовский проспект, 48
-				br
-				| 5&nbsp;этаж, веранда Ресторана и&nbsp;Бара &laquo;Облака&raquo;
+		block aside__address

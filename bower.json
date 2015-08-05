@@ -1,0 +1,21 @@
+{
+  "name": "vremenagoda",
+  "version": "0.0.1",
+  "description": "Vremena Goda Sale",
+  "main": "index.html",
+  "authors": [
+    "Anton Cherepov"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "modernizr": "~2.8.3"
+  }
+}

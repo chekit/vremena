@@ -1,0 +1,16 @@
+html, body {
+	overflow: auto;
+	min-width: 100%;
+	min-height: 100%;
+}
+
+html {
+	height: 100%;
+	font-size: .625em;
+}
+
+body {
+	position: relative;
+	background-color: white;
+  	font: normal 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+}

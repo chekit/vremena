@@ -7,7 +7,7 @@ var gulp = require('gulp'),
 gulp.task('wiredep', function () {
   return gulp.src(['src/*.html', 'src/pages/*.html'])
     .pipe(wiredep({
-    	directory: 'src/bower_components'
+    	directory: './src/bower_components'
     }))
     .pipe(gulp.dest('src'));
 });

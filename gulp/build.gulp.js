@@ -29,7 +29,7 @@ gulp.task('clean', function (cb) {
 gulp.task('fonts', function () {
 	return gulp.src(path.fonts)
 		.pipe(gulp.dest('./src/css/fonts/'))
-		.pipe(gulp.dest('./dist/fonts/'))
+		.pipe(gulp.dest('./dist/css/fonts/'))
 		.pipe($.notify({
 			title: 'Fonts',
 			message: 'Fonts Copied!'
@@ -57,14 +57,21 @@ gulp.task('sass', function () {
 });
 
 gulp.task('jade', function () {
+	var assets = $.useref.assets();
+
 	return gulp.src(path.jade)
 		.pipe($.jade({
 			pretty: true
 		}))
+		.pipe(gulp.dest('./src/'))
 		.pipe(wiredep({
-	    	directory: 'src/bower_components'
+	    	directory: './src/bower_components'
 	    }))
 		.pipe(gulp.dest('./src/'))
+		.pipe(assets)
+		.pipe($.if('*.js', $.uglify()))
+		.pipe(assets.restore())
+        .pipe($.useref())
 		.pipe(gulp.dest('./dist/'))
 		.pipe($.notify({
 			title: 'Jade',

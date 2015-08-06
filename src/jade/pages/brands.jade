@@ -1,6 +1,7 @@
 extends ../_tmpl/_tmpl
 
 block append config
+	- var newPageTitle = pageTitle.push(" Участники акции")
 	- var newWrapperClass = wrapperClass.push('wrapper--full')
 	- var brands = true
 

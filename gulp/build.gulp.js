@@ -14,7 +14,7 @@ var path = {
 	sass: ['./src/sass/styles.scss'],
 	fonts: ['./src/sass/base/fonts/**/*'],
 	scripts: ['./src/js/*.js'],
-	images: ['./src/images/**/*.{png,jpg,gif,svg}']
+	images: ['./src/images/**/*.{png,jpg,gif,svg,xml,ico,json}']
 }
 
 var errorHandler = function (error) {

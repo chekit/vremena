@@ -1,0 +1,14 @@
+.safari {
+	body,
+	.item--specials {
+		font-family: $ff_helvetica_reg--safari;
+	}
+
+	h2,
+	h3,
+	strong,
+	.main-nav__list,
+	.slider__list {
+		font-family: $ff_helvetica_b--safari;
+	}
+}

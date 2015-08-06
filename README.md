@@ -2,7 +2,9 @@
 
 To start work with project do the following:
 - clone repository on your local
-in the teminal
+
+In the teminal
+
 - `npm install`
 - `bower install`
 

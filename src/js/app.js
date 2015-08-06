@@ -51,7 +51,7 @@
 		var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
 
 		if (isSafari) {
-			$('html').addClass('safari')
+			$('html').addClass('safari');
 		}
 
 		if (!!d.getElementById('js-slider')) {

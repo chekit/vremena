@@ -2,3 +2,5 @@ node_modules/
 dist/
 .sass-cache/
 src/bower_components/
+src/css/
+src/*.html

@@ -5,6 +5,8 @@ var gulp = require('gulp'),
 
 var files = [
 	'./src/css/**/*.css',
+	'./src/images/**/*.*',
+	'./src/js/**/*.js',
 	'./src/*.html'
 ];
 

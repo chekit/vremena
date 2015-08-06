@@ -10,6 +10,12 @@ gulp.task('watch', function () {
 	watch('src/jade/**/*.jade', function () {
 		gulp.start('jade');
 	});
+	watch('src/js/**/*.js', function () {
+		gulp.start('scripts');
+	});
+	watch('src/images/**/*.*', function () {
+		gulp.start('images');
+	});
 
 	watch('bower.json', function () {
 		gulp.start('wiredep');

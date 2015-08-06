@@ -5,27 +5,51 @@ block append config
 	- var newAsideClass = asideClass.push('aside--look')
 
 block append main
-	#js-slider.slider
+	#js-slider.slider.item--outline
 		button.slider__btn.btn--prev Предыдущий
 		button.slider__btn.btn--next Следующий
 		img.slider__img(src="images/slider-bg.png", alt="Джинсы Pinko")
 		.slider__wrapper
 			ul.slider__list
 				li.list__item
-					img.item__img(src="images/things/pinko.png", alt="Джинсы Pinko")
+					.item__model
+						img.model__img(src="images/things/jeans.png", alt="Джинсы Pinko")
 					p.item__name Джинсы Pinko
 					p.item__discount -70%
 				li.list__item
-					img.item__img(src="images/things/pinko.png", alt="Джинсы Pinko")
-					p.item__name Джинсы Pinko
+					.item__model
+						img.model__img(src="images/things/jacket.png", alt="Куртка Pinko")
+					p.item__name Куртка Pinko
 					p.item__discount -70%
 				li.list__item
-					img.item__img(src="images/things/pinko.png", alt="Джинсы Pinko")
-					p.item__name Джинсы Pinko
+					.item__model
+						img.model__img(src="images/things/white-top.png", alt="Белый топ Pinko")
+					p.item__name Белый топ Pinko
 					p.item__discount -70%
 				li.list__item
-					img.item__img(src="images/things/pinko.png", alt="Джинсы Pinko")
-					p.item__name Джинсы Pinko
+					.item__model
+						img.model__img(src="images/things/jeans-top.png", alt="Джинсовый топ Love Moschino")
+					p.item__name
+						| Джинсовый топ
+						br
+						| Love Moschino
+					p.item__discount -70%
+				li.list__item
+					.item__model
+						img.model__img(src="images/things/footwear_1.png", alt="Босоножки Hogan (Кашемир и шелк)")
+					p.item__name
+						| Босоножки Hogan
+						br
+						| (Кашемир и шелк)
+					p.item__discount -70%
+				li.list__item
+					.item__model
+						img.model__img(src="images/things/jewelry.png", alt="Украшения H.Stern")
+					p.item__name Украшения H.Stern
+				li.list__item
+					.item__model
+						img.model__img(src="images/things/bag.png", alt="Сумка Maje")
+					p.item__name Сумка Maje
 					p.item__discount -70%
 block append aside__event
 	.aside__block.block--event

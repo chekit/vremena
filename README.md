@@ -13,3 +13,7 @@ In the teminal
 To build project: `gulp build`
 
 To work on project via *localhost*: `gulp server`
+
+## Result
+
+http://www.spletnik.ru/vremenagoda
